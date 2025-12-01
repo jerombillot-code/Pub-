@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jercat Token - L'Avenir Décentralisé</title>
+    <style>
+        /* Définition des couleurs néon */
+        :root {
+            --neon-blue: #00FFFF;
+            --neon-pink: #FF00FF;
+            --dark-bg: #0A0A1F;
+        }
+
+        /* Styles de base */
+        body {
+            background-color: var(--dark-bg);
+            color: #E0E0FF; /* Texte légèrement clair */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header / Section Hero */
+        .hero-section {
+            padding: 100px 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Styles du titre animé */
+        .animated-title {
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+            margin-bottom: 20px;
+        }
+
+        .title-part {
+            display: inline-block;
+            opacity: 0; /* Caché par défaut */
+            animation: fadeInOut 6s infinite ease-in-out; /* Animation de 6s en boucle */
+        }
+
+        /* Animation des parties du titre */
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: scale(0.9); }
+            10% { opacity: 1; transform: scale(1); text-shadow: 0 0 15px var(--neon-pink); }
+            30% { opacity: 1; transform: scale(1); }
+            40% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 0; }
+        }
+
+        /* Délai pour chaque partie */
+        .title-part:nth-child(1) { animation-delay: 0s; color: var(--neon-blue); } /* L'AVENIR */
+        .title-part:nth-child(2) { animation-delay: 2s; color: var(--neon-pink); } /* DÉCENTRALISÉ */
+        .title-part:nth-child(3) { animation-delay: 4s; color: var(--neon-blue); } /* EST ICI. */
+
+        /* Logo/Slogan */
+        .slogan {
+            font-size: 1.5em;
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+            margin-bottom: 40px;
+        }
+
+        /* Boutons d'Action */
+        .cta-button {
+            background-color: transparent;
+            border: 2px solid var(--neon-pink);
+            color: var(--neon-pink);
+            padding: 15px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        .cta-button:hover {
+            background-color: var(--neon-pink);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--neon-pink);
+        }
+
+        /* Section Contrat */
+        .contract-address {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--neon-blue);
+        }
+
+        /* Section Contenu (Exemple) */
+        .content-section {
+            background-color: rgba(10, 10, 31, 0.7); /* Fond semi-transparent */
+            padding: 40px 20px;
+            margin-top: 50px;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 10px;
+            border: 1px solid var(--neon-blue);
+        }
+
+        .content-section h2 {
+            color: var(--neon-pink);
+            text-shadow: 0 0 8px var(--neon-pink);
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="animated-title">
+            <span class="title-part">L'AVENIR</span>
+            <span class="title-part" style="animation-delay: 2s;">DÉCENTRALISÉ</span>
+            <span class="title-part" style="animation-delay: 4s;">EST ICI.</span>
+        </div>
+
+        <h2 class="slogan">JERCAT TOKEN : Propulsez votre portefeuille dans la nouvelle ère.</h2>
+
+        <div class="cta-container">
+            <a href="#" class="cta-button">Acheter JERCAT</a>
+            <a href="#" class="cta-button">Consulter le Whitepaper</a>
+        </div>
+
+        <p class="contract-address">
+            Adresse du Contrat : <span style="font-weight: bold;">0x197CF8951d93325A9333E533daf7ACbcCF</span>
+        </p>
+    </header>
+
+    <section class="content-section">
+        <h2>🌐 Rejoignez le Réseau Mondial</h2>
+        <p>Jercat Token est le pont entre l'innovation technologique et l'adoption mondiale. Notre écosystème est construit sur la transparence, la croissance et une communauté forte.</p>
+        
+        <p style="margin-top: 30px;">
+            <a href="#" style="color: var(--neon-blue); text-decoration: none; margin: 0 15px;">Twitter/X</a> | 
+            <a href="#" style="color: var(--neon-blue); text-decoration: none; margin: 0 15px;">Telegram</a> | 
+            <a href="#" style="color: var(--neon-blue); text-decoration: none; margin: 0 15px;">Discord</a>
+        </p>
+    </section>
+
+</body>
+</html>
